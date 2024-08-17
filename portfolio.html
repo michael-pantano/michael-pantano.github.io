@@ -16,11 +16,20 @@
             <li><a href="2048.html">2048 Game</a></li>
         </ul>
     </div>
+    <div class="instruction-text">
+        <div class="page-tile">
+            <h1>My Portfolio</h1>
+        </div>
+            
+        </div>
+        <p>(hover over images to play gifs)</p>
+    </div>
     <div class="portfolio-container">
         <!-- First Portfolio Item (Left) -->
         <div class="portfolio-item left">
             <div class="portfolio-image">
-                <img src="database.gif" alt="Database Project" style="width: 100%; height: auto;">
+                <!-- Initially displaying the static image -->
+                <img src="database_first_frame.png" alt="Database Project" id="database-image" style="width: 100%; height: auto;">
             </div>
             <div class="portfolio-description">
                 <h2>MongoDB Graphing Dashboard via Streamlit:</h2>
@@ -61,6 +70,20 @@
             </div>
         </div>
     </div>    
+
+    <!-- JavaScript to handle the image swap -->
+    <script>
+        const imgElement = document.getElementById('database-image');
+        const gifSrc = 'database.gif';
+        const staticSrc = 'database_first_frame.png';
+
+        imgElement.addEventListener('mouseover', function() {
+            imgElement.src = gifSrc;
+        });
+
+        imgElement.addEventListener('mouseout', function() {
+            imgElement.src = staticSrc;
+        });
+    </script>
 </body>
 </html>
- 

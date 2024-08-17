@@ -52,6 +52,15 @@ body {
 .navbar a:hover {
     color: #64ffda;
 }
+.instruction-text {
+    margin-top: 50px;
+}
+.page-title {
+    font-size: 5rem;
+    color: #ccd6f6;
+    margin-top: 50px;
+    margin: 0.2rem 0;
+}
 
 .container {
     text-align: left;
@@ -107,7 +116,7 @@ body {
     padding: 2rem;
     gap: 2rem;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .portfolio-item {
