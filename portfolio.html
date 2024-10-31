@@ -20,10 +20,8 @@
         <div class="page-tile">
             <h1>My Portfolio</h1>
         </div>
-            
-        </div>
-        <p>(hover over images to play gifs)</p>
     </div>
+    <p>(hover over images to play gifs)</p>
     <div class="portfolio-container">
         <!-- First Portfolio Item (Left) -->
         <div class="portfolio-item left">
@@ -33,8 +31,7 @@
             </div>
             <div class="portfolio-description">
                 <h2>MongoDB Graphing Dashboard via Streamlit:</h2>
-                <p>This python program is able to search through every post in a database and return every unique tag/test name. From there, streamlit reads the text input of a tag name and the program searches through every post with that tag name and parses through the data and stores it in arrays. The program then graphs the data! <br>
-                </p>
+                <p>This python program is able to search through every post in a database and return every unique tag/test name. From there, streamlit reads the text input of a tag name and the program searches through every post with that tag name and parses through the data and stores it in arrays. The program then graphs the data! <br></p>
             </div>
         </div>
     
@@ -42,28 +39,40 @@
         <div class="portfolio-item right">
             <div class="portfolio-description">
                 <h2>Virtual Dashboard to Display and Control Height of System:</h2>
-                <p>This virtual dashboard reads the input of a distance sensor and displays it. When the height is set, the dashboard sends data to the height motors to increase or decrease the height until it reaches the set value. </p>
+                <p>This virtual dashboard reads the input of a distance sensor and displays it. When the height is set, the dashboard sends data to the height motors to increase or decrease the height until it reaches the set value.</p>
             </div>
             <div class="portfolio-image">
-                <img src="heightcontrol.gif" alt="Database Project" style="width: 100%; height: auto;">
+                <img src="heightcontrol_firstframe.png" alt="Height Control Project" id="heightcontrol-image" style="width: 100%; height: auto;">
             </div>
         </div>
-    
-       
     </div>    
 
     <!-- JavaScript to handle the image swap -->
     <script>
-        const imgElement = document.getElementById('database-image');
-        const gifSrc = 'database.gif';
-        const staticSrc = 'database_first_frame.png';
+        // Database image hover effect
+        const databaseImgElement = document.getElementById('database-image');
+        const databaseGifSrc = 'database.gif';
+        const databaseStaticSrc = 'database_first_frame.png';
 
-        imgElement.addEventListener('mouseover', function() {
-            imgElement.src = gifSrc;
+        databaseImgElement.addEventListener('mouseover', function() {
+            databaseImgElement.src = databaseGifSrc;
         });
 
-        imgElement.addEventListener('mouseout', function() {
-            imgElement.src = staticSrc;
+        databaseImgElement.addEventListener('mouseout', function() {
+            databaseImgElement.src = databaseStaticSrc;
+        });
+
+        // Height control image hover effect
+        const heightControlImgElement = document.getElementById('heightcontrol-image');
+        const heightControlGifSrc = 'heightcontrol.gif';
+        const heightControlStaticSrc = 'heightcontrol_firstframe.png';
+
+        heightControlImgElement.addEventListener('mouseover', function() {
+            heightControlImgElement.src = heightControlGifSrc;
+        });
+
+        heightControlImgElement.addEventListener('mouseout', function() {
+            heightControlImgElement.src = heightControlStaticSrc;
         });
     </script>
 </body>

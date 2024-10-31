@@ -174,3 +174,56 @@ body {
         padding: 0 1rem;
     }
 }
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2000px;
+    margin: 100px auto; /* Adds spacing from the navbar */
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    color: #ccd6f6;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    color: #ccd6f6;
+    margin-bottom: 1rem;
+}
+
+.example-paragraph {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%; 
+    height: auto; 
+    border: 1px solid #8892b0;
+    padding: 5px;
+    border-radius: 4px; 
+}
+
+
+@media (max-width: 1050px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+}
+
