@@ -219,7 +219,7 @@ function gameOver() {
     overlay.style.alignItems = "center";
     overlay.style.zIndex = "1000";
 
-    // Create the game over message
+
     let message = document.createElement("div");
     message.innerText = "Game Over! Score: " + score;
     message.style.color = "white";
